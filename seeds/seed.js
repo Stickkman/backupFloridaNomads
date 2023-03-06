@@ -4,7 +4,7 @@ const { User, Traveller, image, destinations, trips} = require('../models');
 const destinationData = require('./destinationData.json');
 const travellerData = require('./travellerData.json');
 const imageData = require('./imageData.json');
-// const tripsData = require('./tripsData.json'); // !!!! UNCOMMENT AFTER DATA IS IN TRIPSDATA.JSON !!!!
+const tripsData = require('./tripsData.json'); // !!!! UNCOMMENT AFTER DATA IS IN TRIPSDATA.JSON !!!!
 const userData = require('./userData.json');
 
 const seedDatabase = async () => {
@@ -30,10 +30,10 @@ const seedDatabase = async () => {
     // });
 
     // // seed trips table                 !!!! UNCOMMENT AFTER DATA IS ENTERED into TRIPSDATA.JSON !!!!
-    // await trips.bulkCreate(tripsData, {
-    //       individualHooks: true,
-    //       returning: true,
-    // }); 
+    await trips.bulkCreate(tripsData, {
+          individualHooks: true,
+          returning: true,
+    }); 
     
     // seed user table
     await User.bulkCreate(userData, {
