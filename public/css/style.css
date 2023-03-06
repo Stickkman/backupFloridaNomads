@@ -1,0 +1,98 @@
+header, .project:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+  background: url("../assets/headerbus7.jpg");
+  /* background-size:100vmin, 100vw;  */
+  /* background-size:130cqmin; */
+  background-size:cover;
+  background-repeat: no-repeat;
+  
+ 
+}
+/* moves the home button off of the bus to the right */
+#moveThisRight {
+  float: left;
+  margin-left: 225%;
+  margin-top: 20%;
+  
+}
+/* nav bar css */
+nav {
+  font-size: 2rem !important;
+  font-weight: bolder;
+  margin-right: 100px !important;
+
+}
+/* color gradient for area between header and footer */
+body {
+  background: url("../assets/Florida\ Map.png");
+  background-color: #0e636d;
+  background-position: center;
+  background-size: unset;
+  background-repeat: no-repeat;
+  min-height: 2vh;
+  margin-bottom: 15%;
+}
+
+.no-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: #1b89bc;
+  text-decoration: none;
+  font-size: 100%;
+}
+
+.no-button:hover {
+  color: #065b83;
+  text-decoration: underline;
+}
+
+.dollar-amount {
+  color: #056605;
+  font-weight: bold;
+  margin-left: -5px;
+}
+
+footer {
+ /* background transparent footer, min height and width to make it show wo content */
+  background: url("../assets/footerbus1.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    min-height: 200px; 
+    min-width: 500px;
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    height:30px;
+}
+
+/* style for the gif simulating uploading an image */
+#gif-container {
+  
+  max-width: 190px !important; 
+  height: 125px !important;
+  margin-top: -80px;
+  margin-left: 8px;
+
+  }
+
+  /* backup for just plain green points color */
+  .pointsColor {
+    color: yellowgreen;
+  }
+
+  /* color looping for points */
+.colorCycle {
+    animation: color-cycle 1s infinite;
+}
+@keyframes color-cycle {
+  0% { color: rgb(115, 255, 0); }
+  25% { color: orange; }
+  50% { color: yellow; }
+  75% { color: green; }
+  100% { color: rgb(0, 204, 255); }
+}
+

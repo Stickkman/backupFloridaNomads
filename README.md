@@ -1,2 +1,2 @@
-# backupFloridaNomads
-In this project, the team built a interative full-stack application that works as a blog, so travelers that visit Florida destinations can share their experiences and unforgettable memories by uploading photos and providing descriptive feedback on the locations.
+# FloridaNomads
+As a traveler, i want to visit florida to experience its unique range of locations,   To keep track of those attractions and experiences, so i can create unforgettable memories,  I want to explore word of mouth destinations and off the beaten path adventures,
